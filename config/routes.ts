@@ -23,6 +23,10 @@ export default [
     ],
   },
   {
+    path: '/',
+    redirect: '/welcome',
+  },
+  {
     path: '/welcome',
     name: 'welcome',
     icon: 'smile',
@@ -46,15 +50,18 @@ export default [
     ],
   },
   {
-    name: 'list.table-list',
-    icon: 'table',
     path: '/list',
+    icon: 'table',
+    name: 'list.table-list',
     component: './TableList',
   },
   {
-    path: '/',
-    redirect: '/welcome',
+    path: '/newspage',
+    icon: 'table',
+    name: 'newspage',
+    component: './NewsPage',
   },
+
   {
     path: '*',
     layout: false,
